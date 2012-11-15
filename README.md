@@ -5,8 +5,6 @@ Run script:
 ./setup.sh
 ```
 
-Inspired by https://github.com/ryanb/dotfiles
-
 It is general script to install:
 * vim
 * oh-my-zsh
@@ -18,3 +16,5 @@ and configure:
 * oh-my-zsh aliases
 * git
 * gem
+
+Inspired by https://github.com/ryanb/dotfiles
