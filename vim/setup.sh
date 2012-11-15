@@ -1,5 +1,4 @@
 #!/bin/bash
-cd vim
 
 # Install mercurial
 sudo apt-get install mercurial

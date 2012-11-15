@@ -2,7 +2,6 @@
 
 require 'rake'
 require 'erb'
-require 'pry'
 
 def notice(message)
   system "echo \"\033[1;32m\n\n=========================================================\n  [INFO] #{message}\n\033[0m\""

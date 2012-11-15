@@ -19,13 +19,21 @@ sudo apt-get install zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 notice "Configure oh-my-zsh aliases"
-source oh-my-zsh/setup.sh
+cd oh-my-zsh
+source setup.sh
+cd ..
 
 notice "Install vim"
-source vim/setup.sh
+cd vim
+source setup.sh
+cd ../../..
 
+
+echo `pwd`
 notice "Configure vim"
-source vim-dotfiles/setup.sh
+cd vim-dotfiles
+source setup.sh
+cd ..
 
 notice "Install other tools"
 bundle

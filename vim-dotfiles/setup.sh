@@ -1,5 +1,4 @@
 #!/bin/bash
-cd vim-dotfiles
 
 ln -vnfs "`pwd`/vimrc" ~/.vimrc
 ln -vnfs "`pwd`/gvimrc" ~/.gvimrc
