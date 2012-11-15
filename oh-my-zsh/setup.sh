@@ -1,7 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+cd oh-my-zsh
 
 # Remove default git aliases
-rm -f ~/.oh-my-zsh/plugins/git/git.plugin.zsh
+rm -vf ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 
 # Replace aliases
-ln -nfs "`pwd`/lib/aliases.zsh" ~/.oh-my-zsh/lib/aliases.zsh
+ln -vnfs "`pwd`/aliases.zsh" ~/.oh-my-zsh/lib/aliases.zsh

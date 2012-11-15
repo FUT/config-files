@@ -1,4 +1,19 @@
-config-files
-============
+#config-files
 
-Main config files to initialize environment
+Run script:
+```bash
+./setup.sh
+
+### Inspired by https://github.com/ryanb/dotfiles/blob/master/Rakefile
+
+It is general script to install:
+* vim
+* oh-my-zsh
+* rvm
+* ruby
+
+and configure:
+* vim
+* oh-my-zsh aliases
+* git
+* gem
