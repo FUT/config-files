@@ -5,7 +5,7 @@ Run script:
 ./setup.sh
 ```
 
-### Inspired by https://github.com/ryanb/dotfiles/blob/master/Rakefile
+Inspired by https://github.com/ryanb/dotfiles/blob/master/Rakefile
 
 It is general script to install:
 * vim
