@@ -3,6 +3,7 @@
 Run script:
 ```bash
 ./setup.sh
+```
 
 ### Inspired by https://github.com/ryanb/dotfiles/blob/master/Rakefile
 
