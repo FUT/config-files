@@ -1,5 +1,6 @@
 map <Leader>p :CtrlPMRUFiles<CR>
 map <Leader>o :CtrlPBuffer<CR>
+map <Leader>r :CtrlPReload<CR>
 
 let g:ctrlp_map = '<C-P>'
 let g:ctrlp_cmd = 'CtrlP'
