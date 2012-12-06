@@ -1,2 +1,10 @@
 set grepprg=ack
-nmap <leader>g :Ack -a  
+
+" Find (defile all)
+nmap <leader>fa :Ack -a  
+" Find (define word)
+nmap <leader>fw :Ack -a  appODODODOD
+" Find (define directory)
+nmap <leader>fd :Ack -a   
+" Instant find with word and directory predefined
+nmap <leader>if :Ack -a  app<CR>
