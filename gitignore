@@ -2,3 +2,5 @@
 .vim/tmp/
 .vim/tags
 .vim/.netrwhist
+*.nogit.*
+**/*.nogit.*
