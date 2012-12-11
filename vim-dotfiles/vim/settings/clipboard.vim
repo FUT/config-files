@@ -1,7 +1,9 @@
+" You need xsel to use this script.
+" Install xsel via apt-get.
 function! Paste(clipboard_name)
   let shellcmd = 'xsel -o --'.a:clipboard_name
 
-  " execute and exit if error occured
+  " Execute and exit if error occured
   let clipboard = system(shellcmd)
   if v:shell_error
     echo 'Error occured while pasting!'
@@ -9,17 +11,16 @@ function! Paste(clipboard_name)
     return 0
   endif
 
-  " insert in paste mode to prevent
-  " autoindentation & exit from paste mode
+  " Insert in paste mode to prevent autoindentation and exit from paste mode
   execute ":set paste"
   exe 'normal i'.clipboard
   execute ":set nopaste"
 
-  " move cursor back
+  " Move cursor back
   exe "normal ''"
 
   echo 'Pasted!'
 endfunction
 
-nmap <leader>rp :call Paste('primary')<CR>    " mouse roll clipboard (Roll Paste)
+nmap <leader>rp :call Paste('primary')<CR>    " Mouse roll clipboard (Roll Paste)
 nmap <leader>tp :call Paste('clipboard')<CR>  " Ctrl+Shift+V clipboard (Terminal Paste)
