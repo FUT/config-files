@@ -128,10 +128,6 @@ vmap <S-Tab> <gv
 
 inoremap kj <Esc>l
 
-" Paste without indent
-nnoremap sp <Esc>:set paste<CR>o
-inoremap snp <Esc>:set nopaste<CR>
-
 " Fast saving, reload, quit
 nmap <leader>w :w!<cr>
 nmap <leader>e :e!<cr>
