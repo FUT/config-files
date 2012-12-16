@@ -16,9 +16,6 @@ function! Paste(clipboard_name)
   exe 'normal i'.clipboard
   execute ":set nopaste"
 
-  " Move cursor back
-  exe "normal ''"
-
   echo 'Pasted!'
 endfunction
 
