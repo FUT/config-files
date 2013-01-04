@@ -12,7 +12,6 @@ cd vim/src
 ./configure --with-features=huge \
   --enable-rubyinterp=yes \
   --enable-pythoninterp=yes \
-  --enable-python3interp=yes \
   --enable-cscope \
   --enable-fontset
 
