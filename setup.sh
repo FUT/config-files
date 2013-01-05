@@ -13,6 +13,9 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 rvm use default
 gem install bundler rake --no-rdoc --no-ri
 
+notice "Configure git"
+git config branch.autosetuprebase always
+
 notice "Switch to oh-my-zsh"
 sudo apt-get install zsh
 
