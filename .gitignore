@@ -1,4 +1,5 @@
 vim-dotfiles/vim/bundle/
+vim-dotfiles/vim/undodir/
 vim/vim/
 Gemfile.lock
 gitconfig

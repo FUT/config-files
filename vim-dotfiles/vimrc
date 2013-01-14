@@ -55,6 +55,15 @@ colorscheme mustang
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[STATIC FLAGS]
 
+"" HISTORY
+set history=128                           " Commands amount kept in the history list
+set undolevels=128
+set undodir=~/.vim/undodir
+set undofile
+set undolevels=1000
+set undoreload=10000
+
+"" OTHER
 set ai                                    " Autoindent new lines
 set autoread                              " Automatically read reload file from disk if it was changed from outside the vim and has no unsaved changes
 set backspace=indent,eol,start            " Intuitive backspacing
@@ -66,7 +75,6 @@ set ffs=unix,dos,mac                      " Order of line endings recognition at
 set foldlevel=20
 set foldlevelstart=20
 set foldmethod=syntax                     " Set block-to-fold determination method set hidden
-set history=1000                          " Commands amount kept in the history list
 set hls                                   " Highlight search results
 set ignorecase                            " Ignore case when searching
 set incsearch                             " Highlight search results while inputting
