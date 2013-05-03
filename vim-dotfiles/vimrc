@@ -46,14 +46,38 @@ Bundle 'vim-coffee-script'
 colorscheme mustang
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[STATIC FLAGS]
+" Ignore backspace and delete keys
+:inoremap <BS> <Nop>
+:inoremap <Del> <Nop>
+
+" Don't make a backup before overwriting a file
+set nobackup
+set nowritebackup
+
+" Show cursor position all the time
+set ruler
+
+" Show incomplete commands
+set showcmd
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" Maps autocomplete to tab
+imap <Tab> <C-N>
+
+" Echo on arrow keys
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
 "" HISTORY
-set history=128                           " Commands amount kept in the history list
-set undolevels=128
+set history=50                           " Commands amount kept in the history list
 set undodir=~/.vim/undodir
 set undofile
-set undolevels=1000
-set undoreload=10000
+set undolevels=50
+set undoreload=50
 
 "" OTHER
 set ai                                    " Autoindent new lines
@@ -75,14 +99,10 @@ set list
 set listchars=tab:!-,trail:-,extends:>    " Show tab as dots and trailing spaces as -
 set mat=5                                 " Match blinking
 set matchtime=3
-set nobackup                              " Don't make a backup before overwriting a file
 set noswapfile                            " Don't create swap FileWritePre
-set nowritebackup
 set number                                " Set line numbers
-set ruler                                 " Show cursor position
 set scrolloff=5                           " Show 3 lines of context arount the cursor
 set shiftwidth=2                          " Global shift width
-set showcmd                               " Dispalay incomplete commands
 set showmatch
 set showmode                              " Display mode you're in
 set smartcase                             " Case sensitive search if any uppercased character presents in the search phrase
@@ -92,8 +112,7 @@ set tabstop=2                             " Global tab width
 set timeoutlen=500                        " Autoindent new lines
 set title                                 " Set the terminal's title
 set visualbell                            " No beeping
-                                          " Files ignored from ctrlp search
-set wildignore+=*/.git/*,*/tmp/*,*/log/*,*/app/assets/images/*,*/vendor/assets/images/*,*/coverage/*,*/public/*
+set wildignore+=*/.git/*,*/tmp/*,*/log/*,*/app/assets/images/*,*/vendor/assets/images/*,*/coverage/*,*/public/* " Files ignored from ctrlp search
 set wildmenu                              " Enhanced command line completion
 set wildmode=list:longest                 " Complete files like a shell
 set wrap                                  " Turn on line wrapping
