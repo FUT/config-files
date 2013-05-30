@@ -39,6 +39,7 @@ Bundle 'tComment'
 Bundle 'tpope/vim-rails'
 Bundle 'unimpaired.vim'
 Bundle 'vim-coffee-script'
+Bundle 'EasyMotion'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[COLORSCHEME]
 
