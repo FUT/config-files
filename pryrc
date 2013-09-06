@@ -16,11 +16,11 @@ end
 
 # Useful collections
 
-def g
+def parray
   (1..10).to_a
 end
 
-def h
+def phash
   {:ruby => 'on rails', :kernel => 'panic'}
 end
 

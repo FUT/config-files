@@ -16,12 +16,12 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[CUSTOM PLUGINS]
 
 " My plugins:
+Bundle 'EasyMotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'Rename2'
 Bundle 'Sass'
 Bundle 'Tabular'
 Bundle 'ack.vim'
-Bundle 'slim-template/vim-slim'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'croaker/mustang-vim'
 Bundle 'csv.vim'
@@ -33,13 +33,14 @@ Bundle 'fugitive.vim'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'less.vim'
 Bundle 'scrooloose/nerdtree'
+Bundle 'slim-template/vim-slim'
+Bundle 'snipMate'
 Bundle 'splitjoin.vim'
 Bundle 'surround.vim'
 Bundle 'tComment'
 Bundle 'tpope/vim-rails'
 Bundle 'unimpaired.vim'
 Bundle 'vim-coffee-script'
-Bundle 'EasyMotion'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[COLORSCHEME]
 

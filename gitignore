@@ -5,3 +5,6 @@
 *.nogit.*
 **/*.nogit.*
 dump.rdb
+
+.ruby-version
+.ruby-gemset
