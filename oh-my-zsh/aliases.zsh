@@ -32,4 +32,5 @@ alias guard='bundle exec guard'
 
 alias tn='tmux new -s '
 alias ta='tmux a -t '
-alias tl="tl -F \"`echo '\e[0;31m#{session_name}\e[0m: \e[0;34m#{session_windows} win\e[0m   #{session_created_string} \n'`\""
+alias tl='tmux list-sessions'
+# alias tl='tl -F "`echo \'\e[0;31m#{session_name}\e[0m: \e[0;34m#{session_windows} win   \e[0m#{session_created_string} \n\'`"'
