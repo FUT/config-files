@@ -29,3 +29,6 @@ alias grs='git reset HEAD~1 --soft'
 
 alias rake='bundle exec rake'
 alias guard='bundle exec guard'
+
+alias tn='tmux new -s '
+alias ta='tmux a -t '
