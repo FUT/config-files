@@ -32,3 +32,4 @@ alias guard='bundle exec guard'
 
 alias tn='tmux new -s '
 alias ta='tmux a -t '
+alias tl='tmux list-sessions'
