@@ -20,7 +20,7 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
 notice "Configure oh-my-zsh"
 ln -nfs zshrc.zsh $HOME/.zshrc
-ln -nfs zsh-locals.zsh $HOME/.zsh-locals
+ln -nfs zsh-locals.zsh $HOME/.zsh-local
 ln -nfs zsh-aliases.zsh $HOME/.zsh-aliases
 
 notice "Install vim"
