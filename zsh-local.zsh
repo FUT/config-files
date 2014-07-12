@@ -8,4 +8,5 @@ export LC_ALL=en_US.UTF-8
 export SYS_NOTIFIER=/usr/local/bin/terminal-notifier
 
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

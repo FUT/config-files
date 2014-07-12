@@ -130,16 +130,6 @@ let mapleader = " "
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[AUTO COMMANDS]
 
-function TrimWhiteSpace()
-  %s/\s*$//
-  ''
-endfunction
-
-autocmd FileWritePre * :call TrimWhiteSpace()
-autocmd FileAppendPre * :call TrimWhiteSpace()
-autocmd FilterWritePre * :call TrimWhiteSpace()
-autocmd BufWritePre * :call TrimWhiteSpace()
-
 " Only for GUI version
 autocmd FocusLost * :wa
 autocmd FocusLost * silent! wa
@@ -155,6 +145,7 @@ inoremap kj <Esc>l
 nmap <leader>w :w!<cr>
 nmap <leader>e :e!<cr>
 nmap <leader>q :q!<cr>
+nmap <leader>t :%s/\s*$//<cr>/pattern_should_not_be_found<cr>
 
 " smart way to move between windows
 map <c-j> <c-w>j

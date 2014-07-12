@@ -19,9 +19,9 @@ sudo apt-get install zsh
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 notice "Configure oh-my-zsh"
-ln -nfs zshrc.zsh $HOME/.zshrc
-ln -nfs zsh-local.zsh $HOME/.zsh-local
-ln -nfs zsh-aliases.zsh $HOME/.zsh-aliases
+ln -nfs `pwd`/zshrc.zsh $HOME/.zshrc
+ln -nfs `pwd`/zsh-local.zsh $HOME/.zsh-local
+ln -nfs `pwd`/zsh-aliases.zsh $HOME/.zsh-aliases
 
 notice "Install vim"
 brew install vim
