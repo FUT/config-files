@@ -3,7 +3,7 @@ if has("syntax")
   au BufNewFile,BufRead *.js      set filetype=javascript
   au BufNewFile,BufRead *.rb      set filetype=ruby
   au BufNewFile,BufRead *.jsonify set filetype=ruby
-  au BufNewFile,BufRead *.rabl set filetype=ruby
+  au BufNewFile,BufRead *.rabl    set filetype=ruby
   au BufNewFile,BufRead *.skim    set filetype=slim
   au BufNewFile,BufRead *.slim    set filetype=slim
   au BufNewFile,BufRead *.yml     set filetype=yaml
