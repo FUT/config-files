@@ -43,6 +43,7 @@ Bundle 'unimpaired.vim'
 Bundle 'vim-coffee-script'
 Bundle 'haml.zip'
 Bundle 'colorizer'
+Bundle 'Gundo'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[COLORSCHEME]
 
