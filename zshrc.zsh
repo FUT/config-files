@@ -28,7 +28,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gitfast rvm npm command-not-found rake gem bundle dircycle prj notify cap ruby brew bundler)
+plugins=(gitfast rvm npm command-not-found rake gem bundle dircycle prj cap ruby brew bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,27 +39,16 @@ source $HOME/.zsh-local
 # Customize to your needs...
 cd ..;cd -
 
-preexec () {
-    # Note the date when the command started, in unix time.
-    CMD_START_DATE=$(date +%s)
-    # Store the command that we're running.
-    CMD_NAME=$1
-}
-precmd () {
-    # Proceed only if we've ran a command in the current shell.
-    if ! [[ -z $CMD_START_DATE ]]; then
-        # Note current date in unix time
-        CMD_END_DATE=$(date +%s)
-        # Store the difference between the last command start date vs. current date.
-        CMD_ELAPSED_TIME=$(($CMD_END_DATE - $CMD_START_DATE))
-        # Store an arbitrary threshold, in seconds.
-        CMD_NOTIFY_THRESHOLD=10
 
-        if [[ $CMD_ELAPSED_TIME -gt $CMD_NOTIFY_THRESHOLD ]]; then
-            # Beep or visual bell if the elapsed time (in seconds) is greater than threshold
-            print -n '\a'
-            # Send a notification
-            terminal-notifier -message "$CMD_NAME   has finished."
-        fi
-    fi
-}
+# Docker variables
+export DOCKER_CERT_PATH=/Users/FUT/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+
+export BUNDLER_EDITOR=vim
+## Added by expedite dev-tools setup
+export PATH=/Users/FUT/projects/dev-tools/rb-scripts:$PATH
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

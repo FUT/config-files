@@ -1,49 +1,57 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[VUNDLE SETTINGS]
 
 set nocompatible               " be iMproved
-filetype on                   " required!
+filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 syntax enable      " Turn on syntax highlighting
-filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[CUSTOM PLUGINS]
 
 " My plugins:
-Bundle 'EasyMotion'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'Rename2'
-Bundle 'Sass'
-Bundle 'Tabular'
-Bundle 'ack.vim'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'croaker/mustang-vim'
-Bundle 'csv.vim'
-Bundle 'ctrlp.vim'
-Bundle 'cucumber.zip'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'endwise.vim'
-Bundle 'fugitive.vim'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'less.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'slim-template/vim-slim'
-Bundle 'snipMate'
-Bundle 'splitjoin.vim'
-Bundle 'surround.vim'
-Bundle 'tComment'
-Bundle 'tpope/vim-rails'
-Bundle 'unimpaired.vim'
-Bundle 'vim-coffee-script'
-Bundle 'haml.zip'
-Bundle 'colorizer'
-Bundle 'Gundo'
+Plugin 'vim-es6'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'Rename2'
+Plugin 'Sass'
+Plugin 'Tabular'
+Plugin 'ack.vim'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'croaker/mustang-vim'
+Plugin 'csv.vim'
+Plugin 'ctrlp.vim'
+Plugin 'cucumber.zip'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'endwise.vim'
+Plugin 'fugitive.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'less.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'slim-template/vim-slim.git'
+Plugin 'snipMate'
+Plugin 'splitjoin.vim'
+Plugin 'surround.vim'
+Plugin 'tComment'
+Plugin 'tpope/vim-rails'
+Plugin 'unimpaired.vim'
+Plugin 'vim-coffee-script'
+Plugin 'haml.zip'
+Plugin 'Gundo'
+Plugin 'fatih/vim-go'
+Plugin 'nono/vim-handlebars'
+" Plugin 'https://github.com/gorodinskiy/vim-coloresque.git'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[COLORSCHEME]
 
@@ -172,6 +180,22 @@ if has("mac") || has("macunix")
   vmap <D-j> <M-j>
   vmap <D-k> <M-k>
 endif
+
+map <leader>j <Plug>(easymotion-prefix)f
+map <leader>k <Plug>(easymotion-prefix)F
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[SPEEDUP RUBY SYNTAX HIGHLIGHTING]
+
+if v:version >= 703
+  " Note: Relative number is quite slow with Ruby, so is cursorline
+  autocmd FileType ruby setlocal ts=2 sts=2 sw=2 norelativenumber nocursorline
+else
+  autocmd FileType ruby setlocal ts=2 sts=2 sw=2
+endif
+
+set ttyfast
+set re=1
+set regexpengine=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""[LOAD PLUGIN SPECIFIC SETTINGS]
 
