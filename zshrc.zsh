@@ -28,7 +28,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gitfast rvm npm command-not-found rake gem bundle dircycle prj cap ruby brew bundler)
+plugins=(gitfast rvm npm command-not-found rake gem dircycle prj ruby brew bundler)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,16 +39,16 @@ source $HOME/.zsh-local
 # Customize to your needs...
 cd ..;cd -
 
-
-# Docker variables
-export DOCKER_CERT_PATH=/Users/FUT/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-export DOCKER_HOST=tcp://192.168.59.103:2376
-
 export BUNDLER_EDITOR=vim
-## Added by expedite dev-tools setup
-export PATH=/Users/FUT/projects/dev-tools/rb-scripts:$PATH
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+eval "$(pyenv init -)"
+export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
